@@ -22,24 +22,17 @@ body {
   text-align: center;
   margin-bottom: 60px;
 }
+.titulo-color {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
 /* Header */
 header {
   width: 100%;
   height: 600px;
-  background: #f4c4f3; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-      to right,
-      hsla(301, 96%, 70%, 0.801),
-      hsla(301, 69%, 86%, 0.801)
-    ),
-    url(../img/long-burguers.jpg); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-      to right,
-      hsla(301, 96%, 70%, 0.801),
-      hsla(301, 69%, 86%, 0.801)
-    ),
-    url(../img/long-burguers.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: cover;
+  background: #7a3dfd;
   background-attachment: fixed;
   position: relative;
 }
@@ -72,7 +65,7 @@ header .textos-header{
 
 .textos-header h1{
     font-family: 'Montserrat', sans-serif;
-    color: #642a73;
+    color: #fff;
     font-size: 50px;
 }
 .textos-header h2{
@@ -87,3 +80,12 @@ header .textos-header{
     bottom: 0;
     width: 100%;
 }
+
+.fondo-violeta{
+    background-color: #7a3dfd;
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+/* cards productos */

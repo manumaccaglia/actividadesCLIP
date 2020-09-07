@@ -4,22 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alimentación Real</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
+      rel="stylesheet"/>
   </head>
   <body>
     <header>
       <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Productos</a>
-        <a href="#">Nosotras</a>
-        <a href="#">Contacto</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotras">Nosotras</a>
+        <a href="#contacto">Contacto</a>
       </nav>
       <section class="textos-header">
+        <a name="inicio" id="inicio"></a>
         <h1>REAL</h1>
         <h2>Alimentos que nutren</h2>
       </section>
@@ -41,6 +41,7 @@
     </header>
     <main>
       <section class="contenedor">
+        <a name="acerca" id="acerca"></a>
         <h2 class="titulo">Sobre Nosotros</h2>
         <h3>¿Quiénes somos?</h3>
         <br />
@@ -74,6 +75,7 @@
       </section>
       <div class="fondo-violeta">
         <section class="contenedor productos">
+          <a name="productos" id="productos"></a>
           <h2 class="titulo-color">Nuestros Productos</h2>
 <!-- SLIDESHOW DE W3SCHOOLS RETOCADO -->
 <!-- solo queda como mvp, TODO cambiarlo a cards -->
@@ -82,7 +84,7 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
               <div class="numbertext">1 / 4</div>
-              <img src="/img/h-arvejas.jpeg" style="width: 100%" />
+              <img src="/img/h-arvejas.png" style="width: 100%" />
               <div class="text">
                 <h3>FIONA</h3>
                 <P>Hamburguesas de arvejas, zanahoria, morrón, cebolla, semillas de girasol, sal marina, pimienta. 🌱</P>
@@ -91,7 +93,7 @@
 
             <div class="mySlides fade">
               <div class="numbertext">2 / 4</div>
-              <img src="/img/h-garbanzos.jpeg" style="width: 100%" />
+              <img src="/img/h-garbanzos.png" style="width: 100%" />
               <div class="text">
                 <h3>RAPUNZEL</h3>
                 <p>Hamburguesa de garbanzos, zapallo cabutia, cebolla, ajo y semillas de lino.🌱</p>
@@ -100,7 +102,7 @@
 
             <div class="mySlides fade">
               <div class="numbertext">3 / 4</div>
-              <img src="/img/h-porotos.jpeg" style="width: 100%" />
+              <img src="/img/h-porotos.png" style="width: 100%" />
               <div class="text">
                 <h3>TIANA</h3>
                 <p>Hamburguesas de porotos colorados, cebollas caramelizadas, morrón, semillas de chía, sal marina, curry. 🌱</p>
@@ -109,7 +111,7 @@
 
             <div class="mySlides fade">
               <div class="numbertext">4 / 4</div>
-              <img src="/img/h-remolacha.jpeg" style="width: 100%" />
+              <img src="/img/h-remolacha.png" style="width: 100%" />
               <div class="text">
                 <h3>MÉRIDA</h3>
                 <p>Hamburguesas de lentejas, remolacha, cebolla, morrón, semillas de sésamo blanco, sal marina, pimentón. 🌱</p>
@@ -132,12 +134,13 @@
         </section>
       </div>
       <section class="contenedor nosotras">
+        <a name="nosotras" id="nosotras"></a>
         <h2 class="titulo">Sobre Nosotras</h2>
 
         <div class="row">
           <div class="column">
             <div class="card">
-              <img src="/img/Mau.jpeg" alt="Maureen" style="width:100%">
+              <img src="/img/Mau.png" alt="Maureen" style="width:100%">
               <div class="container">
                 <h2>Maureen D'Archivio</h2>
                 <p class="title">Emprendedora 💪🏻</p>
@@ -148,7 +151,7 @@
         
           <div class="column">
             <div class="card">
-              <img src="/img/Mari.jpeg" alt="Mari" style="width:100%">
+              <img src="/img/Mari.png" alt="Mari" style="width:100%">
               <div class="container">
                 <h2>Marianella Maccaglia</h2>
                 <p class="title">Emprendedora 💪🏻</p>
@@ -160,6 +163,7 @@
 
       </section>
       <section class="contenedor contacto">
+        <a name="contacto" id="contacto"></a>
         <h2 class="titulo">Contactanos</h2>
       </section>
     </main>

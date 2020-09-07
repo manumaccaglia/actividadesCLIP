@@ -75,45 +75,95 @@
       <div class="fondo-violeta">
         <section class="contenedor productos">
           <h2 class="titulo-color">Nuestros Productos</h2>
-          <div class="wrapper">
-            <div class="card">
-              <div class="imgBx"> <img src="/img/h-arvejas.jpeg" alt=""></div>
-              <div class="content">
-                <h3>Fiona</h3>
-                <p>Hamburguesas de arvejas, zanahoria, morrón, cebolla, semillas de girasol, sal marina, pimienta. 🌱</p>
+<!-- SLIDESHOW DE W3SCHOOLS RETOCADO -->
+<!-- solo queda como mvp, TODO cambiarlo a cards -->
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="/img/h-arvejas.jpeg" style="width: 100%" />
+              <div class="text">
+                <h3>FIONA</h3>
+                <P>Hamburguesas de arvejas, zanahoria, morrón, cebolla, semillas de girasol, sal marina, pimienta. 🌱</P>
               </div>
             </div>
-            <div class="card">
-              <div class="imgBx"> <img src="/img/h-garbanzos.jpeg" alt=""></div>
-              <div class="content">
-                <h3>Cenicienta</h3>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="/img/h-garbanzos.jpeg" style="width: 100%" />
+              <div class="text">
+                <h3>RAPUNZEL</h3>
                 <p>Hamburguesa de garbanzos, zapallo cabutia, cebolla, ajo y semillas de lino.🌱</p>
               </div>
             </div>
-            <div class="card">
-              <div class="imgBx"> <img src="/img/h-porotos.jpeg" alt=""></div>
-              <div class="content">
-                <h3>Pocahontas</h3>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="/img/h-porotos.jpeg" style="width: 100%" />
+              <div class="text">
+                <h3>TIANA</h3>
                 <p>Hamburguesas de porotos colorados, cebollas caramelizadas, morrón, semillas de chía, sal marina, curry. 🌱</p>
               </div>
             </div>
-            <div class="card">
-              <div class="imgBx"> <img src="/img/h-remolacha.jpeg" alt=""></div>
-              <div class="content">
-                <h3>Ariel</h3>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="/img/h-remolacha.jpeg" style="width: 100%" />
+              <div class="text">
+                <h3>MÉRIDA</h3>
                 <p>Hamburguesas de lentejas, remolacha, cebolla, morrón, semillas de sésamo blanco, sal marina, pimentón. 🌱</p>
               </div>
             </div>
-            
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
           </div>
         </section>
       </div>
       <section class="contenedor nosotras">
         <h2 class="titulo">Sobre Nosotras</h2>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="/img/Mau.jpeg" alt="Maureen" style="width:100%">
+              <div class="container">
+                <h2>Maureen D'Archivio</h2>
+                <p class="title">Emprendedora 💪🏻</p>
+                <p>Tengo 23 años, nací en Cipolletti Río negro. Estudio nutrición. Feliz de poder crear este emprendimiento en donde no solamente desarrollo autonomía económica sino que también puedo trasmitir información que siento que puede ayudar a varias personas y llegar a más personas.</p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card">
+              <img src="/img/Mari.jpeg" alt="Mari" style="width:100%">
+              <div class="container">
+                <h2>Marianella Maccaglia</h2>
+                <p class="title">Emprendedora 💪🏻</p>
+                <p>Tengo 21 años, nací en Comodoro Rivadavia, Chubut. Actualmente estoy estudiando la licenciatura en nutrición en Córdoba...</p>
+              </div>
+            </div>
+          </div>       
+        </div>
+
       </section>
       <section class="contenedor contacto">
         <h2 class="titulo">Contactanos</h2>
       </section>
     </main>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>

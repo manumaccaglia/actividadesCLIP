@@ -2,21 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Alimentación Real</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
-      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#acerca">Acerca de</a>
-        <a href="#productos">Productos</a>
-        <a href="#nosotras">Nosotras</a>
-        <a href="#contacto">Contacto</a>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar">
+          <span class="navbar-brand mb-0 h1">Real</span>
+        </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#acerca">Acerca de</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Productos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#productos">Hamburguesas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item disabled" href="#">Falafel</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotras">Nosotras</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <section class="textos-header">
         <a name="inicio" id="inicio"></a>
@@ -40,17 +97,18 @@
       </div>
     </header>
     <main>
-      <section class="contenedor">
+      <!-- ACERCA -->
+      <section class="container">
         <a name="acerca" id="acerca"></a>
         <h2 class="titulo">Sobre Nosotros</h2>
         <h3>¿Quiénes somos?</h3>
         <br />
         <p>
           Somos dos amigas, futuras licenciadas en nutrición, que buscamos,
-          mediante este emprendimiento, mostrarles un mundo más saludable y
-          sustentable. Tomando conciencia que los alimentos que elegimos comer y
-          cómo son producidos tienen un impacto en la naturaleza y en nuestra
-          salud 🌎
+          mediante este emprendimiento, mostrarles un mundo
+          <mark>más saludable y sustentable.</mark> Tomando conciencia que los
+          alimentos que elegimos comer y cómo son producidos tienen un impacto
+          en la naturaleza y en nuestra salud 🌎
         </p>
         <br />
         <h3>¿Por qué real? 🤔</h3>
@@ -72,102 +130,168 @@
         </p>
         <br />
         <h3>¿Estás listo para probar? 👇🏻</h3>
+        <br />
       </section>
-      <div class="fondo-violeta">
-        <section class="contenedor productos">
-          <a name="productos" id="productos"></a>
-          <h2 class="titulo-color">Nuestros Productos</h2>
-<!-- SLIDESHOW DE W3SCHOOLS RETOCADO -->
-<!-- solo queda como mvp, TODO cambiarlo a cards -->
-          <!-- Slideshow container -->
-          <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 4</div>
-              <img src="img/h-arvejas.png" style="width: 100%" />
-              <div class="text">
-                <h3>FIONA</h3>
-                <P>Hamburguesas de arvejas, zanahoria, morrón, cebolla, semillas de girasol, sal marina, pimienta. 🌱</P>
+
+      <!-- SECCIÓN PRODUCTOS -->
+      <section class="container">
+        <a name="productos" id="productos"></a>
+        <h2 class="titulo">Nuestros Productos</h2>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="/img/h-arvejas.png" class="card-img" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">FIONA</h5>
+                  <p class="card-text">
+                    Hamburguesas de arvejas, zanahoria, morrón, cebolla,
+                    semillas de girasol, sal marina, pimienta 🌱
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Vegana y sin TACC</small>
+                  </p>
+                  <a href="#" class="btn btn-primary">La quiero!</a>
+                </div>
               </div>
             </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 4</div>
-              <img src="img/h-garbanzos.png" style="width: 100%" />
-              <div class="text">
-                <h3>RAPUNZEL</h3>
-                <p>Hamburguesa de garbanzos, zapallo cabutia, cebolla, ajo y semillas de lino.🌱</p>
-              </div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 4</div>
-              <img src="img/h-porotos.png" style="width: 100%" />
-              <div class="text">
-                <h3>TIANA</h3>
-                <p>Hamburguesas de porotos colorados, cebollas caramelizadas, morrón, semillas de chía, sal marina, curry. 🌱</p>
-              </div>
-            </div>
-
-            <div class="mySlides fade">
-              <div class="numbertext">4 / 4</div>
-              <img src="img/h-remolacha.png" style="width: 100%" />
-              <div class="text">
-                <h3>MÉRIDA</h3>
-                <p>Hamburguesas de lentejas, remolacha, cebolla, morrón, semillas de sésamo blanco, sal marina, pimentón. 🌱</p>
-              </div>
-            </div>
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-          <br />
-
-          <!-- The dots/circles -->
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="/img/h-garbanzos.png" class="card-img" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">RAPUNZEL</h5>
+                  <p class="card-text">
+                    Hamburguesa de garbanzos, zapallo cabutia, cebolla, ajo y
+                    semillas de lino🌱
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Vegana y sin TACC</small>
+                  </p>
+                  <a href="#" class="btn btn-primary">La quiero!</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
-      </div>
-      <section class="contenedor nosotras">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="/img/h-porotos.png" class="card-img" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">TIANA</h5>
+                  <p class="card-text">
+                    Hamburguesas de porotos colorados, cebollas caramelizadas,
+                    morrón, semillas de chía, sal marina, curry 🌱
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Vegana y sin TACC</small>
+                  </p>
+                  <a href="#" class="btn btn-primary">La quiero!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="/img/h-remolacha.png" class="card-img" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">MÉRIDA</h5>
+                  <p class="card-text">
+                    Hamburguesas de lentejas, remolacha, cebolla, morrón,
+                    semillas de sésamo blanco, sal marina, pimentón 🌱
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">Vegana y sin TACC</small>
+                  </p>
+                  <a href="#" class="btn btn-primary">La quiero!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NOSOTRAS -->
+      <section class="container">
         <a name="nosotras" id="nosotras"></a>
         <h2 class="titulo">Sobre Nosotras</h2>
-
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <img src="img/Mau.png" alt="Maureen" style="width:100%">
-              <div class="container">
-                <h2>Maureen D'Archivio</h2>
-                <p class="title">Emprendedora 💪🏻</p>
-                <p>Tengo 23 años, nací en Cipolletti Río negro. Estudio nutrición. Feliz de poder crear este emprendimiento en donde no solamente desarrollo autonomía económica sino que también puedo trasmitir información que siento que puede ayudar a varias personas y llegar a más personas.</p>
-              </div>
+        <div class="d-flex flex-wrap justify-content-around">
+          <div class="card" style="width: 18rem">
+            <img src="/img/Mari.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Mari</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Emprendedora</h6>
+              <p class="card-text">
+                Me llamo Marianella Maccaglia, tengo 21 años, nací en Comodoro
+                Rivadavia, Chubut. Actualmente estoy estudiando la licenciatura
+                en nutrición en la UCC.
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
             </div>
           </div>
-        
-          <div class="column">
-            <div class="card">
-              <img src="img/Mari.png" alt="Mari" style="width:100%">
-              <div class="container">
-                <h2>Marianella Maccaglia</h2>
-                <p class="title">Emprendedora 💪🏻</p>
-                <p>Tengo 21 años, nací en Comodoro Rivadavia, Chubut. Actualmente estoy estudiando la licenciatura en nutrición en Córdoba...</p>
-              </div>
+          <div class="card" style="width: 18rem">
+            <img src="/img/Mau.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Mau</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Emprendedora</h6>
+              <p class="card-text">
+                Me llamo Mauren D'Archivio, tengo 23 años, nací en Cipolletti
+                Río negro. Estudio nutrición. Feliz de poder crear este
+                emprendimiento en donde no solamente desarrollo autonomía
+                económica sino que también puedo trasmitir información que
+                siento que puede ayudar a varias personas y llegar a más
+                personas
+              </p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
             </div>
-          </div>       
+          </div>
         </div>
-
       </section>
-      <section class="contenedor contacto">
+      <!-- CONTACTO -->
+      <section class="container">
         <a name="contacto" id="contacto"></a>
         <h2 class="titulo">Contactanos</h2>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+            <br />
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+            <br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Deseo recibir noticias por mail.
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
       </section>
     </main>
 
     <script src="/js/script.js"></script>
+    <footer></footer>
   </body>
 </html>
